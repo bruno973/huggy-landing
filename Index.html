@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-social.css">
+    <title>Bienvenue chez Huggy</title>
+    
+
+</head>
+<body>
+    <div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">C'est encore le bazar chez toi ?</h1>
+        <img class="img-fluid rounded" src="images/1.gif">
+        
+
+    </div>
+    
+
+    <img class="img-fluid rounded-circle" src="Images/2.gif">
+
+    <p>Ta team t'a laissé en plan avec les bouteilles ?</p>
+
+    
+    <img class="img-fluid rounded-circle" src="images/3.gif">
+
+    <p>Tu les collectionne depuis des années ?
+        <br>Mais t'a soudainement décidé de passer aux timbres ?
+    </p>
+
+    <img class="img-fluid rounded-circle" src="Images/4.gif">
+
+    <p>Tu trouve pas la borne à verre de ton quartier ?</p>
+
+    <img class="img-fluid rounded-circle" src="Images/9.gif">
+
+    <p>T'a simplement trop la flemme de descendre tes 10 cartons de bouteilles dans les escaliers ?</p>
+
+
+    <h3>T'inquiète chez <em>huggy</em> on pose pas de questions !</h3>
+
+    <img class="img-fluid" src="Images/bruno-01.webp">
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-win">Appel <em>huggy</em></button>
+
+    <!--Fenetre modal-->
+        <div class="modal fade" id="modal-win" tabindex="-1" role="dialog" aria-labelledby="Contacter Huggy">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contacter Huggy</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid" src="bruno-01.webp">
+                        <h2 class="display1">T'est prêt ?</h2>
+                        <h2 class="display2">C'est parti ! on a juste besoin de quelques éléments ...</h2>
+                        
+                        <form id="formulaire-1" netlify>
+                            <div class="modal-p1">
+                                <div class="row">
+                                    <!-- <label class="col" for="Fname">Prénom</label>
+                                    <label class="col" for="name">Nom</label> -->
+                                    <div class="col">
+                                        <input type="text" placeholder="Prénom" id="Fname" name="Fname" required="true"></input>
+                                    </div>
+                                    <div class="col">
+                                    <input class="col" type="text" placeholder="Nom" id="name" name="name" required="true"></input>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <!-- Téléphone -->
+                                <label for="phone">Ton téléphone:</label>
+                                <input type="tel" id="phone" name="Téléphone" required="true" value="tel" pattern="[0-9]{10}" maxlength="10">
+                            </div>                               
+                            <div class="modal-p2 hide-me">
+                                <div class="row">
+                                                       
+                                    <div class="col">
+                                        <input type="search" id="address-input" placeholder="Ton adresse" required="true"></input>
+                                    </div>
+                                    <h2>t'a de la chance pour le moment Huggy et ces potes sont en rodages ... Ouep ! C'est toi qui choisi le prix :</h2>
+                                    
+                                </div>
+                                <h3>Pour moi le juste prix de ce service est :</h3>
+                                
+                                <input id="price" type="number" value="1.00" min="0.50" step="0.10">
+                                
+
+                            </div>     
+
+                            <div class="modal-p3 hide-me">
+                                <div class="row">                                                      
+
+                                    <h2>En ce moment j'ai plutôt :</h2>
+                            
+                                
+                                <input id="NBCarton" type="number" value="1.00" min="1" max="12" step="1">
+                                </div>
+
+                            </div>                               
+                            <div class="modal-p4 hide-me">
+                                <div class="row">                                                      
+
+                                    <h2>YAY ! <br> Merci à toi</h2>
+                                    <h3>Toute l'équipe d'Huggy est sur le coup !</h3>
+                                    <h3>On reviens vers toi rapidement pour prévoir un enlèvement dans ton quartier !</h3>
+
+                                    <div class="share-button">
+                                        <a class="btn btn-social-icon btn-lg btn-facebook">
+                                            <span class="fa fa-facebook"></span>
+                                          </a>
+                                    </div>
+                                    <div class="share-button">
+                                        <a class="btn btn-social-icon btn-lg btn-instagram">
+                                            <span class="fa fa-instagram"></span>
+                                          </a>
+                                    </div>
+                                    <div class="share-button">
+                                        <a class="btn btn-social-icon btn-lg btn-linkedin">
+                                            <span class="fa fa-linkedin"></span>
+                                          </a>
+                                    </div>
+
+                                </div>
+
+                            </div>                               
+                        </form>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="bouton-preced" class="btn btn-primary hideme">Précédent</button>
+                        <button type="button" id="bouton-valid" class="btn btn-primary">Valider</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <img src="">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/places.js@1.17.1"></script>
+
+    <script> var placesAutocomplete = places ({
+        appId: "pl9G7PVLX2U2",
+        apiKey: "c87b3dc77e9501a2491636151347dbd0",
+        container: document.querySelector("#address-input")
+    });
+    </script>
+
+    <script>
+    //Début du script JQUERY
+    $("#bouton-valid").click(function (){
+        if (($(".modal-p1").hasClass("hide-me")) === false )  {
+            $(".modal-p1").addClass("hide-me");
+            $(".modal-p2").removeClass("hide-me");
+            $(".display1").replaceWith("<h2>Encore quelques informations</h2>")
+            $(".display2").addClass("hide-me");
+        }
+        else if (($(".modal-p2").hasClass("hide-me")) === false )  {
+            $(".modal-p2").addClass("hide-me");
+            $(".modal-p3").removeClass("hide-me");
+        }
+        else if (($(".modal-p3").hasClass("hide-me")) === false )  {
+            $(".modal-p3").addClass("hide-me");
+            $(".modal-p4").removeClass("hide-me");
+            $("#bouton-valid").addClass("hide-me");
+            $("#bouton-preced").addClass("hide-me");
+            document.getElementById("formulaire-1").submit();
+        }
+        
+    })
+    </script>
+
+</body>
+<footer></footer>
+</html>
