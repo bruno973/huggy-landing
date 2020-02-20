@@ -1,9 +1,42 @@
+@font-face {
+    font-family: "Funkies";
+    src: local(Funkies), url("/fonts/Funkies.ttf") format("ttf");
+}
+
 body {
     background-color: #FF8D00 ;
-    color: #320000;
+    color: saddlebrown;
     text-shadow: #FFF400;
     text-align: center;
+    font-family: "Funkies" ;
+    font-size: 2em;
 }
+
+.jumbotron h1 {
+    text-transform: capitalize;
+    
+}
+
+hr {
+    margin-top: 2.5em;
+}
+
+
+
+.jumbotron em {
+    font-size: 130%;
+    color: saddlebrown;
+}
+
+.jumbotron img {
+    width: 110%;
+}
+
+img {
+    width: 80%;
+    margin-top: 0.2em;
+}
+
 
 .modal-p1 {
     /* display: none; */
@@ -33,17 +66,11 @@ body {
     background-color: rgb(22, 12, 0) ;
 }
 
-.jumbotron img {
-    width: 50%;
-}
 
 .jumbotron {
     background-color: rgba(255, 255, 255, 0.05) ;
     color: seashell;
     font-family: Funkies ;
+    padding-top: 0.1 em;
 }
 
-@font-face {
-    font-family: "Funkies";
-    src: url("fonts/Funkies.ttf") format("ttf");
-}
