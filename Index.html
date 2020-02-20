@@ -61,8 +61,16 @@
                         <img class="img-fluid" src="bruno-01.webp">
                         <h2 class="display1">T'est prêt ?</h2>
                         <h2 class="display2">C'est parti ! on a juste besoin de quelques éléments ...</h2>
+
+                        <form netlify netlify-honeypot="bot-field" hidden>
+                            <input type="text" name="Fname"></input>
+                            <input type="text" name="name"></input>
+                            <input type="search" name="adresse"></input>
+                            <input type="number" name="prix"></input>
+                            <input type="number" name="NBCarton"></input>
+                        </form>
                         
-                        <form id="formulaire-1" netlify>
+                        <form id="formulaire-1" data-netlify="true">
                             <div class="modal-p1">
                                 <div class="row">
                                     <!-- <label class="col" for="Fname">Prénom</label>
@@ -84,14 +92,14 @@
                                 <div class="row">
                                                        
                                     <div class="col">
-                                        <input type="search" id="address-input" placeholder="Ton adresse" required="true"></input>
+                                        <input  type="search" id="address-input" name="adresse" placeholder="Ton adresse" required="true"></input>
                                     </div>
                                     <h2>t'a de la chance pour le moment Huggy et ces potes sont en rodages ... Ouep ! C'est toi qui choisi le prix :</h2>
                                     
                                 </div>
                                 <h3>Pour moi le juste prix de ce service est :</h3>
                                 
-                                <input id="price" type="number" value="1.00" min="0.50" step="0.10">
+                                <input id="price" type="number" name="prix" value="1.00" min="0.50" step="0.10">
                                 
 
                             </div>     
@@ -102,7 +110,7 @@
                                     <h2>En ce moment j'ai plutôt :</h2>
                             
                                 
-                                <input id="NBCarton" type="number" value="1.00" min="1" max="12" step="1">
+                                <input id="NBCarton" name="NBCarton" type="number" value="1.00" min="1" max="12" step="1">
                                 </div>
 
                             </div>                               
