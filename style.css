@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Funkies";
     src: local(Funkies), url("./fonts/Funkies.ttf") format("ttf");
+    src: local(Funkies), url("./fonts/Funkies.woff") format("woff");
 }
 
 body {
