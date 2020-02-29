@@ -4,10 +4,12 @@
     src: local(Funkies), url("./fonts/Funkies.woff") format("woff");
 }
 
+
+
 body {
     background-color: #FF8D00 ;
     color: saddlebrown;
-    text-shadow: #FFF400;
+    /* text-shadow: #FFF400; */
     text-align: center;
     font-family: "Funkies" ;
     font-size: 2em;
@@ -38,6 +40,14 @@ img {
     margin-top: 0.2em;
 }
 
+.txt-final {
+    font-size: 1.5em;
+    padding-bottom: 10%;
+}
+
+#btn-main {
+    font-size: 1.1em;
+}
 
 .modal-p1 {
     /* display: none; */
@@ -72,6 +82,40 @@ img {
     background-color: rgba(255, 255, 255, 0.05) ;
     color: seashell;
     font-family: Funkies ;
-    padding-top: 0.1 em;
+    /* padding-top: 0.1 em; */
 }
+
+
+/* Stylisation du HR */
+
+hr {
+    padding: 0;
+    border: none;
+    height: 4px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    color: saddlebrown;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+hr:after {
+    content:" ";
+    display: inline-block;
+    position: relative;
+    top: -2.1em;
+    font-size: 1.5em;
+    padding: 20% 1.75em 2em;
+    background: url(huggy.png) no-repeat scroll center;
+    background-size: 150px 150px;
+    height: 150px;
+    }
+p.p-intro{
+    font-size: 0.1 em;
+}
+    input {
+        width: 90%;
+    }
 

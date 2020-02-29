@@ -20,32 +20,41 @@
 
     </div>
     
+    <p>Ta team t'a laissé en plan avec les bouteilles ?</p>
 
     <img class="img-fluid rounded" src="Images/2.gif">
 
-    <p>Ta team t'a laissé en plan avec les bouteilles ?</p>
-
-    
-    <img class="img-fluid rounded" src="images/3.gif">
+    <hr>
 
     <p>Tu les collectionne depuis des années ?
         <br>Mais t'a soudainement décidé de passer aux timbres ?
     </p>
 
-    <img class="img-fluid rounded" src="Images/4.gif">
+    <img class="img-fluid rounded" src="images/3.gif">
+
+    <hr>
 
     <p>Tu trouve pas la borne à verre de ton quartier ?</p>
 
-    <img class="img-fluid rounded" src="Images/9.gif">
+    <img class="img-fluid rounded" src="Images/4.gif">
 
     <p>T'a simplement trop la flemme de descendre tes 10 cartons de bouteilles dans les escaliers ?</p>
 
+    <img class="img-fluid rounded" src="Images/9.gif">
 
-    <h3>T'inquiète chez <em>huggy</em> on pose pas de questions !</h3>
+    <hr class="double-hr">
+
+
+
+    <h3 class="txt-final">T'inquiète chez <em>huggy</em> on pose pas de questions !</h3>
+
+    <button id="btn-main" type="button" class="btn-lg btn-primary" data-toggle="modal" data-target="#modal-win">Appel <em>huggy</em></button>
 
     <img class="img-fluid" src="Images/bruno-01.webp">
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-win">Appel <em>huggy</em></button>
+    
+
+    
 
     <!--Fenetre modal-->
         <div class="modal fade" id="modal-win" tabindex="-1" role="dialog" aria-labelledby="Contacter Huggy">
@@ -59,8 +68,8 @@
                     </div>
                     <div class="modal-body">
                         <img class="img-fluid" src="bruno-01.webp">
-                        <h2 class="display1">T'est prêt ?</h2>
-                        <h2 class="display2">C'est parti ! on a juste besoin de quelques éléments ...</h2>
+                        <h2 class="display1">T'est prêt ? <em>C'est parti !</em></h2>
+                        <p class="p-intro"> on a juste besoin de quelques éléments ...</p>
 
                         <form netlify netlify-honeypot="bot-field" hidden>
                             <input type="text" name="Fname"></input>
@@ -76,7 +85,7 @@
                                     <!-- <label class="col" for="Fname">Prénom</label>
                                     <label class="col" for="name">Nom</label> -->
                                     <div class="col">
-                                        <input type="text" placeholder="Prénom" id="Fname" name="Fname" required="true"></input>
+                                        <input type="text" label="prénom" placeholder="Prénom" id="Fname" name="Fname" required="true"></input>
                                     </div>
                                     <div class="col">
                                     <input class="col" type="text" placeholder="Nom" id="name" name="name" required="true"></input>
