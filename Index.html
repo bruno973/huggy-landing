@@ -71,6 +71,8 @@
                         <h2 class="display1">T'est prêt ? <em>C'est parti !</em></h2>
                         <p class="p-intro"> on a juste besoin de quelques éléments ...</p>
 
+                        <div class="formulaire-cadre">
+
                         <form netlify netlify-honeypot="bot-field" hidden>
                             <input type="text" name="Fname"></input>
                             <input type="text" name="name"></input>
@@ -94,8 +96,7 @@
                                 </div>
                                 
                                 <!-- Téléphone -->
-                                <label for="phone">Ton téléphone:</label>
-                                <input type="tel" id="phone" name="Téléphone" required="true" value="tel" pattern="[0-9]{10}" maxlength="10">
+                                <input type="tel" id="phone" placeholder="ton téléphone" name="Téléphone" required="true" value="tel" pattern="[0-9]{10}" maxlength="10">
                             </div>                               
                             <div class="modal-p2 hide-me">
                                 <div class="row">
@@ -152,10 +153,12 @@
                         </form>
                         
                     </div>
+                     </div>
                     <div class="modal-footer">
                         <button type="button" id="bouton-preced" class="btn btn-primary hideme">Précédent</button>
                         <button type="button" id="bouton-valid" class="btn btn-primary">Valider</button>
                     </div>
+                
                 </div>
             </div>
         </div>
