@@ -108,9 +108,12 @@
                                     
                                 </div>
                                 <h3>Pour moi le juste prix de ce service est :</h3>
-                                
-                                <input id="price" type="number" name="prix" value="1.00" min="0.50" step="0.10">
-                                
+                                <div class="increment-button">
+                                    <input id="price" type="number" name="prix" value="1.00" min="0.50" step="0.10">
+                                    <button type="button"  id="decrease" class="btn btn-primary">-</button>
+                                    <button type="button" id="increase" class="btn btn-primary">+</button>
+                                    
+                                </div>
 
                             </div>     
 
@@ -120,7 +123,13 @@
                                     <h2>En ce moment j'ai plutôt :</h2>
                             
                                 
-                                <input id="NBCarton" name="NBCarton" type="number" value="1.00" min="1" max="12" step="1">
+                                
+                                <div class="increment-button">
+                                    <input id="NBCarton" name="NBCarton" type="number" value="1.00" min="1" max="12" step="1">
+                                    <button type="button"  id="decrease-c" class="btn btn-primary">-</button>
+                                    <button type="button" id="increase-c" class="btn btn-primary">+</button>
+                                    
+                                </div>
                                 </div>
 
                             </div>                               
@@ -203,6 +212,40 @@
         }
         
     })
+//Fonction pour augmenter le prix
+$("#increase").click(function() {
+var value = parseFloat(document.getElementById("price").value);
+var step = parseFloat(document.getElementById("price").step) ;
+console.log(value ,step);
+var newV = value + step ;
+document.getElementById("price").value = newV ;
+})
+//Fonction pour diminuer le prix
+$("#decrease").click(function() {
+var value = parseFloat(document.getElementById("price").value);
+var step = parseFloat(document.getElementById("price").step) ;
+console.log(value ,step);
+var newV = value - step ;
+document.getElementById("price").value = newV ;
+})
+
+//Fonction pour augmenter la qte
+$("#increase-c").click(function() {
+var value = parseFloat(document.getElementById("NBCarton").value);
+var step = parseFloat(document.getElementById("NBCarton").step) ;
+console.log(value ,step);
+var newV = value + step ;
+document.getElementById("NBCarton").value = newV ;
+})
+//Fonction pour diminuer le prix
+$("#decrease-c").click(function() {
+var value = parseFloat(document.getElementById("NBCarton").value);
+var step = parseFloat(document.getElementById("NBCarton").step) ;
+console.log(value ,step);
+var newV = value - step ;
+document.getElementById("NBCarton").value = newV ;
+})
+
     </script>
 
 </body>
